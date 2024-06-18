@@ -129,6 +129,7 @@ form {
   font-weight: 500;
   font-size: 15px;
   cursor: pointer;
+  background-color: rgb(24, 97, 97);
 }
 
 .rightcontent {
@@ -143,6 +144,6 @@ form {
 }
 
 .rightcontent-text{
- margin: 20px;
+ margin: 15px;
  color:  #d1dbe4;
 }
