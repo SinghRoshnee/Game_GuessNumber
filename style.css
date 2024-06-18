@@ -82,14 +82,15 @@ button {
   align-items: center;
   justify-content: space-between;
   /* height: 60vh; */
-  margin: 12px;
+  margin: 10px;
   display: none;
+  /* background-color: red; */
 }
 
 .leftcontent {
   /* height: 60%; */
   width: 50%;
-  margin: 1rem 1rem;
+  margin: 0 1rem;
   background-color: var(--uppercontent-color);
   box-shadow: 1px 1px 15px var(--secondary-shadow-color) inset;
   border-radius: 20px;
@@ -123,7 +124,7 @@ form {
   border: none;
   outline: none;
   background-color: #8e9ca9;
-  color: #000000;
+  color:whitesmoke;
   font-weight: 500;
   font-size: 15px;
   cursor: pointer;
@@ -134,7 +135,7 @@ form {
   /* height: 60vh; */
   width: 50%;
   background-color: var(--uppercontent-color);
-  margin: 1rem 1rem;
+  margin: 0 1rem;
   box-shadow: 1px 1px 15px var(--secondary-shadow-color) inset;
   border-radius: 20px;
   text-align: center;
@@ -150,7 +151,7 @@ form {
 
 #startoverbtn {
   background-color: rgb(24, 97, 97);
-  color: #000000;
+  color:whitesmoke;
   font-weight: 500;
   font-size: 18px;
   padding: 12px;
