@@ -115,7 +115,6 @@ form {
   padding: 12px;
   border-radius: 15px;
   margin-bottom: 16px;
-  
 }
 
 #submitbtn {
@@ -143,7 +142,28 @@ form {
   padding: 20px 20px;
 }
 
-.rightcontent-text{
- margin: 15px;
- color:  #d1dbe4;
+.rightcontent-text {
+  margin: 15px;
+  color: #d1dbe4;
+  font-size: 20px;
+}
+
+/* .active {
+  width: 2rem;
+  background-color: #000000;
+  padding: 7px;
+  border-radius: 10px;
+} */
+
+#startoverbtn {
+  background-color: rgb(24, 97, 97);
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 12px;
+  width: 8rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin-left: 9rem;
 }
