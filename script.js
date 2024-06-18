@@ -3,7 +3,7 @@ const lowercontent = document.querySelector(".lowercontent");
 const container = document.querySelector(".container");
 
 btn.addEventListener("click", () => {
-  container.style.height = "90vh";
+  // container.style.height = "90vh";
   lowercontent.style.display = "flex";
 });
 
@@ -99,7 +99,7 @@ function newgame() {
     userinput.removeAttribute("disabled");
     previousguesses = [];
     guessslot.innerHTML = "";
-    guessremaining.innerHTML = `${11 - remaininguess}`;
+    guessremaining.innerHTML = `${6 - remaininguess}`;
     startover.removeChild(p);
     lowhi.innerHTML = "";
     playgame = true;

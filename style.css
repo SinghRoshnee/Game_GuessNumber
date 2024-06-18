@@ -38,11 +38,10 @@ p {
 }
 
 .container {
-  height: 40vh;
-  width: 70vw;
+  /* height: 40vh; */
+  width: 60vw;
   background-color: var(--secondary-bgcolor);
   box-shadow: 1px 1px 15px var(--primary-shadow-color) inset;
-  /* margin: 10px auto; */
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -50,7 +49,7 @@ p {
 }
 
 .uppercontent {
-  height: 35vh;
+  /* height: 35vh; */
   background-color: var(--uppercontent-color);
   margin: 1rem 2rem;
   box-shadow: 1px 1px 15px var(--secondary-shadow-color) inset;
@@ -82,13 +81,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60vh;
-  margin: 20px;
+  /* height: 60vh; */
+  margin: 12px;
   display: none;
 }
 
 .leftcontent {
-  height: 100%;
+  /* height: 60%; */
   width: 50%;
   margin: 1rem 1rem;
   background-color: var(--uppercontent-color);
@@ -132,7 +131,7 @@ form {
 }
 
 .rightcontent {
-  height: 100%;
+  /* height: 60vh; */
   width: 50%;
   background-color: var(--uppercontent-color);
   margin: 1rem 1rem;
@@ -148,12 +147,6 @@ form {
   font-size: 20px;
 }
 
-/* .active {
-  width: 2rem;
-  background-color: #000000;
-  padding: 7px;
-  border-radius: 10px;
-} */
 
 #startoverbtn {
   background-color: rgb(24, 97, 97);
