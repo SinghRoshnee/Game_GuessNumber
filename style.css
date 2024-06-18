@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --primary-bgcolor: #000814;
+  --secondary-bgcolor: #212a31;
+  --primary-shadow-color: #737774;
+  --uppercontent-color: #232f3a;
+  --secondary-shadow-color: #000814;
+  --primary-text-color: #748d92;
+}
+
+h1 {
+  font-size: 2.7rem;
+  color: var(--primary-text-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+p {
+  font-size: 1.1rem;
+  color: rgb(158, 181, 201);
+}
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000814;
+}
+
+.container {
+  height: 40vh;
+  width: 70vw;
+  background-color: var(--secondary-bgcolor);
+  box-shadow: 1px 1px 15px var(--primary-shadow-color) inset;
+  /* margin: 10px auto; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.uppercontent {
+  height: 35vh;
+  background-color: var(--uppercontent-color);
+  margin: 1rem 2rem;
+  box-shadow: 1px 1px 15px var(--secondary-shadow-color) inset;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+}
+
+.uppercontent-maintext{
+  margin-bottom: 15px;
+}
+
+
+button{
+  padding: 12px;
+  color: #fff;
+  background-color: teal;
+  border: none;
+  outline: none;
+  width: 7rem;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+/* lower content*/
+
+.lowercontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  margin: 20px;
+  display: none;
+}
+
+.leftcontent {
+  height: 100%;
+  width: 50%;
+  background-color: var(--uppercontent-color);
+  margin: 1rem 1rem;
+  box-shadow: 1px 1px 15px var(--secondary-shadow-color) inset;
+  border-radius: 20px;
+}
+form{
+  text-align: center;
+  padding: 20px;
+}
+
+label{
+  color: #d1dbe4;
+  padding: 20px;
+}
+
+
+ label{
+  font-size: 30px;
+}
+.rightcontent {
+  height: 100%;
+  width: 50%;
+  background-color: var(--uppercontent-color);
+  margin: 1rem 1rem;
+  box-shadow: 1px 1px 15px var(--secondary-shadow-color) inset;
+  border-radius: 20px;
+}
