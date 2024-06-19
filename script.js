@@ -10,7 +10,6 @@ btn.addEventListener("click", () => {
 /* main game code */
 
 let randomnumber = parseInt(Math.random() * 100 + 1);
-// console.log(randomnumber);
 
 const submitbtn = document.querySelector("#submitbtn");
 const userinput = document.querySelector("#userinput");
@@ -19,10 +18,9 @@ const guessremaining = document.querySelector("#guessremaining");
 const lowhi = document.querySelector("#lowhigh");
 const startover = document.querySelector(".resultparas");
 
-
 let playgame = true;
 let previousguesses = [];
-let remaininguess = 0;
+let remaininguess = 5;
 
 let p = document.createElement("p");
 
@@ -43,7 +41,7 @@ function validateguess(userguess) {
     alert("plz enter a number smaller than 100 ");
   } else {
     previousguesses.push(userguess);
-    if (remaininguess === 6) {
+    if (remaininguess === 0) {
       displayguess(userguess);
       displaymsg(`Game Over  Random number was  ${randomnumber}`);
       endgame();
@@ -59,23 +57,24 @@ function checkguess(userguess) {
     displaymsg(`you guessed it right`);
     endgame();
   } else if (userguess > randomnumber) {
-    displaymsg(`Number is Too High`);
+    displaymsg(`Number is TOOO High`);
   } else if (userguess < randomnumber) {
-    displaymsg(`Number is Too Low`);
+    displaymsg(`Number is TOOO Low`);
   }
 }
 
 function displayguess(userguess) {
   userinput.value = "";
   guessslot.innerHTML += `${userguess},  `;
-  guessslot.style.backgroundColor = '#000';
-  guessslot.style.padding = '5px'
-  guessslot.style.border_radius = '10px';
-  remaininguess++;
-  guessremaining.innerHTML = `${6 - remaininguess}`;
-  guessremaining.style.backgroundColor = '#000';
-  guessremaining.style.padding = '5px'
-  guessremaining.style.border_radius = '10px';
+  guessslot.style.backgroundColor = "#000";
+  guessslot.style.padding = "5px";
+  guessslot.style.borderRadius = "10px";
+  remaininguess--;
+  // guessremaining.innerHTML = `${5 - remaininguess}`;
+  guessremaining.innerHTML = remaininguess;
+  guessremaining.style.backgroundColor = "#000";
+  guessremaining.style.padding = "5px";
+  guessremaining.style.borderRadius = "10px";
 }
 
 function displaymsg(message) {
@@ -94,12 +93,14 @@ function endgame() {
 
 function newgame() {
   const startoverbtn = document.querySelector("#startoverbtn");
-  startoverbtn.addEventListener("click", () => {
+  startoverbtn.addEventListener("click", (e) => {
     randomnumber = parseInt(Math.random() * 100 + 1);
-    userinput.removeAttribute("disabled");
     previousguesses = [];
-    guessslot.innerHTML = "";
-    guessremaining.innerHTML = `${6 - remaininguess}`;
+    remaininguess = 5;
+    guessslot.innerHTML = " ";
+    // guessremaining.innerHTML = `${5 - remaininguess}`;
+    guessremaining.innerHTML = remaininguess;
+    userinput.removeAttribute("disabled");
     startover.removeChild(p);
     lowhi.innerHTML = "";
     playgame = true;

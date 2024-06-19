@@ -17,17 +17,17 @@
 
 h1 {
   font-size: 2.7rem;
-  color: var(--primary-text-color);
+  color: rgba(255, 255, 255, 0.841);
 }
 
 h2 {
   font-size: 1.5rem;
-  color: var(--primary-text-color);
+  color: white;
 }
 
 p {
   font-size: 1.1rem;
-  color: rgb(158, 181, 201);
+  color: white;
 }
 .main {
   height: 100vh;
@@ -73,6 +73,7 @@ button {
   font-size: 20px;
   cursor: pointer;
   margin: 15px;
+  font-weight: 600;
 }
 
 /* lower content*/
@@ -111,10 +112,11 @@ form {
   width: 6rem;
   border: none;
   outline: none;
-  background-color: #8393a2;
+  background-color: #cbd1d6;
   padding: 12px;
   border-radius: 15px;
   margin-bottom: 16px;
+  color:#000814;
 }
 
 #submitbtn {
@@ -123,12 +125,12 @@ form {
   border-radius: 15px;
   border: none;
   outline: none;
-  background-color: #8e9ca9;
+ 
   color:whitesmoke;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
-  background-color: rgb(24, 97, 97);
+  background-color:#000814;
 }
 
 .rightcontent {
@@ -144,13 +146,13 @@ form {
 
 .rightcontent-text {
   margin: 15px;
-  color: #d1dbe4;
+  color: #eef0f1;
   font-size: 20px;
 }
 
 
 #startoverbtn {
-  background-color: rgb(24, 97, 97);
+  background-color: teal;
   color:whitesmoke;
   font-weight: 500;
   font-size: 18px;
@@ -160,4 +162,5 @@ form {
   border: none;
   outline: none;
   margin-left: 9rem;
+  cursor: pointer;
 }
