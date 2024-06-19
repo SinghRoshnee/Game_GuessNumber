@@ -41,7 +41,7 @@ function validateguess(userguess) {
     alert("plz enter a number smaller than 100 ");
   } else {
     previousguesses.push(userguess);
-    if (remaininguess === 0) {
+    if (remaininguess === 1) {
       displayguess(userguess);
       displaymsg(`Game Over  Random number was  ${randomnumber}`);
       endgame();
@@ -63,18 +63,41 @@ function validateguess(userguess) {
 //   }
 // }
 
+// function checkguess(userguess) {
+//   if (userguess === randomnumber) {
+//     displaymsg(`you guessed it right`);
+//     endgame();
+//   } else if (userguess > randomnumber) {
+//     displaymsg(`Number is TOOO High`);
+//   } else if (userguess > randomnumber - 10) {
+//     displaymsg(`Number is slight High try guessing slight low`);
+//   } else if (userguess < randomnumber) {
+//     displaymsg(`Number is TOOO Low`);
+//   }else if (userguess < randomnumber + 10) {
+//     displaymsg(`Number is slight Low try guessing slight hight`);
+//   }
+// }
+
 function checkguess(userguess) {
-  if (userguess === randomnumber) {
-    displaymsg(`you guessed it right`);
+  //Raunak's version
+  if (userguess == randomnumber) {
+    //if right guess
+    displaymsg(`You guessed it right.`);
     endgame();
   } else if (userguess > randomnumber) {
-    displaymsg(`Number is TOOO High`);
-  } else if (userguess > randomnumber - 10) {
-    displaymsg(`Number is slight High try guessing slight low`);
+    //if higher guess check again if even much higher than 10
+    if (userguess > randomnumber + 10) {
+      displaymsg("Your guess is too high.");
+    } else {
+      displaymsg("Your guess is slightly high, too close.");
+    }
   } else if (userguess < randomnumber) {
-    displaymsg(`Number is TOOO Low`);
-  }else if (userguess < randomnumber + 10) {
-    displaymsg(`Number is slight Low try guessing slight hight`);
+    //if lower guess check again if even much lower than 10
+    if (userguess < randomnumber - 10) {
+      displaymsg("Your guess is too low.");
+    } else {
+      displaymsg("Your guess is slightly low, too close.");
+    }
   }
 }
 
