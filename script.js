@@ -63,20 +63,6 @@ function validateguess(userguess) {
 //   }
 // }
 
-// function checkguess(userguess) {
-//   if (userguess === randomnumber) {
-//     displaymsg(`you guessed it right`);
-//     endgame();
-//   } else if (userguess > randomnumber) {
-//     displaymsg(`Number is TOOO High`);
-//   } else if (userguess > randomnumber - 10) {
-//     displaymsg(`Number is slight High try guessing slight low`);
-//   } else if (userguess < randomnumber) {
-//     displaymsg(`Number is TOOO Low`);
-//   }else if (userguess < randomnumber + 10) {
-//     displaymsg(`Number is slight Low try guessing slight hight`);
-//   }
-// }
 
 function checkguess(userguess) {
   //Raunak's version
@@ -101,22 +87,7 @@ function checkguess(userguess) {
   }
 }
 
-// function checkguess(userguess) {
-//   if (userguess === randomnumber) {
-//     displaymsg(`you guessed it right`);
-//     endgame();
-//   } else if (userguess > randomnumber) {
-//     displaymsg(`Number is TOOO High`);
-//     if (userguess > randomnumber - 10) {
-//       displaymsg(`Number is slight High try guessing slight low`);
-//     }
-//   } else if (userguess < randomnumber) {
-//     displaymsg(`Number is TOOO Low`);
-//     if (userguess < randomnumber + 10) {
-//       displaymsg(`Number is slight Low try guessing slight high`);
-//     }
-//   }
-// }
+
 
 function displayguess(userguess) {
   userinput.value = "";
